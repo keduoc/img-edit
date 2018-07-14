@@ -45,12 +45,17 @@ body{
 }
 .mask{
     height: 100%;
-    display: flex;
+    width: 100%;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
     color: white;
-
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+.imgEdit:hover .mask{      /* 不是.mask:hover */
+    display: flex;
 }
 .message{
     position: absolute;
